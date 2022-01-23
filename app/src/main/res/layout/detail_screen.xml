@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.details.DetailScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/fr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/p1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="18dp"
+                android:background="@drawable/btn_bg"
+                android:padding="7dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/b_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_bg"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fr">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/radley"
+                android:gravity="center"
+                android:text="Etna"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/radley"
+            android:text="Mount Etna is a classic type of volcano (stratovolcano). Etna is the highest active volcano in Europe.
+
+In fact, its size is simply amazing - the volcano is gigantic. The relief map clearly shows that it occupies a huge area. In addition to the main crater, which remained from the last powerful eruption, Etna has many (hundreds) additional (side) craters. The largest of them are clearly visible on the relief map.
+
+The island of Sicily owes its appearance to the volcano Etna. During its history of many thousands of years, the volcano created this island, modified it many times, and continues to do so even now. A significant part of eastern Sicily, including the coastline, continues to change every year under the influence of the constant eruptions of Mount Etna. In 2011, for example, 19 eruptions of Etna with lava eruptions were recorded. The number of cases when ash was thrown into the air was even greater. Well, the volcano “smokes” (smokes) almost always.
+
+During eruptions, with the release of lava to the surface of the Earth, other craters are formed. This happens at different heights of the volcano in places that are sometimes difficult to calculate or predict. The biggest danger is when new craters form in the middle and lower parts of the volcano, where there are many cities and other settlements."
+            android:textColor="@color/txt_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/b_b" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

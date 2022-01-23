@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.vulcano_club2.ui.splash.SplashScreen"
+        android:label="splash_sceen"
+        tools:layout="@layout/splash_sceen" >
+        <action
+            android:id="@+id/action_splashScreen_to_onBoarding"
+            app:destination="@id/onBoarding" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoarding"
+        android:name="com.example.vulcano_club2.ui.onboard.OnBoarding"
+        android:label="on_board_fragment"
+        tools:layout="@layout/on_board_fragment" >
+        <action
+            android:id="@+id/action_onBoarding_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.vulcano_club2.ui.home.HomeScreen"
+        android:label="home_screen"
+        tools:layout="@layout/home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_detailScreen"
+            app:destination="@id/detailScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailScreen"
+        android:name="com.example.vulcano_club2.ui.details.DetailScreen"
+        android:label="detail_screen"
+        tools:layout="@layout/detail_screen" />
+</navigation>

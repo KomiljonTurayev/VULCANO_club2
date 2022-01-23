@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.onboard.OnBoarding">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg">
+
+        <ImageView
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tool_bar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/radley"
+            android:text="Europe is home to six of the largest volcanoes in the world - Etna, Vesuvius, Hekla, Stromboli, Vulcano and Eraivajokull (Hvannadalshnukur). The volcanoes of this part of the world can be divided into two groups.
+The first is the most famous largest volcanoes in the world that Italy can boast of, or rather the south of this country. Here are: undoubtedly the first in height and activity in Western Europe - Etna (a very active volcano, the eruptions of which occur quite often, the last was in 2019) and almost one of the dangerous volcanoes in the world - Vesuvius (the most famous, it is most often described in historical data, the last eruption in its history was in 1944). And also acting - Stromboli and Vulcano.
+The second group includes Iceland - the kingdom of ice and the kingdom of flame, where the most dangerous subglacial eruption takes place. There are over 320 active volcanoes on this island. Here are the largest volcanoes Hekla (the most active and unpredictable volcano in the country) and Eraivajokull (Hvannadalshnukur Peak - the highest point in the country)."
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolBar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_bg_2"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            android:text="Next"
+            android:fontFamily="@font/radley"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
